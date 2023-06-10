@@ -1,3 +1,30 @@
-dialog {
+body {
+    display: flexbox;
+}
+
+#paginacion {
+    user-select: none;
+}
+
+li:active {
     border: 1px solid red;
+}
+
+figure {
+    /*border: thin #c0c0c0 solid;*/
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 500px;
+    margin: auto;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic sans-serif;
+    padding: 3px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2em;
 }

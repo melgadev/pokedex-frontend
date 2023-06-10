@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  </head>
+  <body>
+    <h1>Lista de pokemones</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul id="listado-pokemones"></ul>
+            </div>
+            <div class="col">
+                <div id="pokemon-img">Clickear en un pokemon para verlo</div>
+            </div>
+        </div>   
+    </div>
+    <div class="container">
+        <div id="paginacion">
+            <span id="previous-page">previa</span>
+            <span id="this-page"></span>
+            <span id="next-page">siguiente</span>
+          </div>
+    </div>
     
-</head>
-<body>
-    <dialog>Hola dialogo</dialog>
-    <script src='main.js'></script>
-</body>
+
+    <script src="main.js"></script>
+  </body>
 </html>
